@@ -1,0 +1,28 @@
+name: Deploy to Shared Hosting
+
+on:
+  push:
+    branches:
+      - main  # Adjust branch name if needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install dependencies (optional, if needed)
+      run: |
+        npm install
+        npm run build  # Adjust build commands for your project
+
+    - name: Deploy via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.0
+      with:
+        server: ftp.yourdomain.com
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./build  # Adjust to your build output directory
+        server-dir: /public_html  # Adjust to your hosting directory
