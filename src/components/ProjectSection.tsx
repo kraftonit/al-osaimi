@@ -36,11 +36,11 @@ export default function Projects() {
                             transition={{ duration: 0.5 }}
                             className="relative aspect-video"
                         >
-                            <img
+                            {/* <img
                                 src={projects[currentIndex].image || "/placeholder.svg"}
                                 alt={projects[currentIndex].title}
                                 className="w-full h-full object-cover rounded-lg shadow-lg"
-                            />
+                            /> */}
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
                                 <h3 className="text-2xl font-bold text-white">{projects[currentIndex].title}</h3>
                             </div>
