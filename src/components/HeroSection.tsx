@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 export default function Hero() {
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
+
             <div className="absolute inset-0 z-0">
                 <video
                     autoPlay
