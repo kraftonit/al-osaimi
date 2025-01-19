@@ -36,6 +36,7 @@ export default function Projects() {
                             transition={{ duration: 0.5 }}
                             className="relative aspect-video"
                         >
+
                             {/* <img
                                 src={projects[currentIndex].image || "/placeholder.svg"}
                                 alt={projects[currentIndex].title}
