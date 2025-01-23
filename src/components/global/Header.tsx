@@ -13,19 +13,19 @@ export default function Header() {
                 </div>
 
                 <div className="hidden md:flex items-center gap-8">
-                    <Link href="/" className="font-medium hover:text-amber-900">
+                    <Link href="/" className="font-semibold hover:text-amber-900">
                         HOME
                     </Link>
-                    <Link href="/pages" className="font-medium hover:text-amber-900">
+                    <Link href="/pages" className="font-semibold hover:text-amber-900">
                         PAGES
                     </Link>
-                    <Link href="/services" className="font-medium hover:text-amber-900">
+                    <Link href="/services" className="font-semibold hover:text-amber-900">
                         SERVICES
                     </Link>
-                    <Link href="/blog" className="font-medium hover:text-amber-900">
+                    <Link href="/blog" className="font-semibold hover:text-amber-900">
                         BLOG
                     </Link>
-                    <Link href="/contact" className="font-medium hover:text-amber-900">
+                    <Link href="/contact" className="font-semibold hover:text-amber-900">
                         CONTACT US
                     </Link>
                 </div>
@@ -34,7 +34,7 @@ export default function Header() {
                     <Button variant="ghost" size="icon">
                         <Search className="h-5 w-5" />
                     </Button>
-                    <Button className="hidden md:flex rounded-md bg-primary text-black font-semibold hover:bg-primary/90">
+                    <Button className="hidden py-3 md:flex rounded-md font-bold bg-black text-white hover:bg-white hover:text-black">
                         GET STARTED
                         <span className="ml-2">→</span>
                     </Button>
