@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${instrumentSans.variable} font-sans antialiased bg-body text-white`}
+        className={`${instrumentSans.variable} font-sans antialiased`}
       >
         <Header />
         {children}
