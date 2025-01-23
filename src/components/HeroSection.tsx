@@ -3,47 +3,47 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function HeroSection() {
     return (
-        <section className="pt-12 pb-20 relative z-10 min-h-[calc(100vh)]">
-            <div className="container relative">
+        <section>
+            <div className="relative py-32 z-10">
                 {/* Content */}
-                <div className="max-w-2xl space-y-8">
-                    <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-                        Building Construction Solutions
-                    </h1>
+                <div className="container">
+                    <div className="flex flex-col gap-8">
+                        <h1 className="text-5xl lg:text-8xl font-bold text-black leading-tight">
+                            Building Construction Solutions
+                        </h1>
 
-                    <div className="flex items-center gap-1">
-                        <div className="flex -space-x-2">
-                            <Avatar className="border-2 border-white">
-                                <AvatarImage src="/placeholder.svg" />
-                                <AvatarFallback>CN</AvatarFallback>
-                            </Avatar>
-                            <Avatar className="border-2 border-white">
-                                <AvatarImage src="/placeholder.svg" />
-                                <AvatarFallback>CN</AvatarFallback>
-                            </Avatar>
-                            <Avatar className="border-2 border-white">
-                                <AvatarImage src="/placeholder.svg" />
-                                <AvatarFallback>CN</AvatarFallback>
-                            </Avatar>
-                            <Avatar className="bg-zinc-900 border-2 border-white">
-                                <AvatarFallback className="text-white">+</AvatarFallback>
-                            </Avatar>
-                        </div>
-                        <div className="ml-4">
-                            <p className="font-medium">More then 25K Clients</p>
-                            <p className="text-sm text-zinc-700">Reviews</p>
+                        <div className="flex items-center gap-1">
+                            <div className="flex -space-x-2">
+                                <Avatar className="border-2 border-white">
+                                    <AvatarImage src="/placeholder.svg" />
+                                    <AvatarFallback>CN</AvatarFallback>
+                                </Avatar>
+                                <Avatar className="border-2 border-white">
+                                    <AvatarImage src="/placeholder.svg" />
+                                    <AvatarFallback>CN</AvatarFallback>
+                                </Avatar>
+                                <Avatar className="border-2 border-white">
+                                    <AvatarImage src="/placeholder.svg" />
+                                    <AvatarFallback>CN</AvatarFallback>
+                                </Avatar>
+                                <Avatar className="bg-zinc-900 border-2 border-white">
+                                    <AvatarFallback className="text-white">+</AvatarFallback>
+                                </Avatar>
+                            </div>
+                            <div className="ml-4">
+                                <p className="font-medium">More then 25K Clients</p>
+                                <p className="text-sm text-zinc-700">Reviews</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                {/* Trophy Badge */}
-                <div className="absolute top-0 right-0 md:right-20 bg-zinc-900 rounded-full p-6">
-                    <div className="w-12 h-12 flex items-center justify-center">
-                        <Image src="/images/banner.jpg" alt="Trophy badge" width={48} height={48} className="invert" />
-                    </div>
+                <div className="absolute -z-10 top-0 left-0 w-full h-full overflow-hidden">
+                    <Image src="/images/banner-bg-shape.svg" alt="Wave" width={1920} height={600} className="w-full h-auto xl:max-h-[500px]" />
                 </div>
             </div>
-            <div className="absolute -z-10 inset-0 bg-primary -skew-y-10"></div>
+            <div className="-mt-[300px] relative -z-10">
+                <Image src="/images/banner.jpg" alt="Banner" width={1920} height={1080} className="w-full h-auto" />
+            </div>
         </section>
     )
 }

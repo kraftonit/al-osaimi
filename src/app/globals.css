@@ -7,4 +7,15 @@
 	html {
 		font-family: var(--font-instrument-sans), system-ui, sans-serif;
 	}
+	.brand-text {
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #000;
+		transition: all 0.3s ease;
+	}
+
+	.brand-text:hover {
+		-webkit-text-stroke-color: var(--primary);
+		transform: scale(1.05);
+	}
 }

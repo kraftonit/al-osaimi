@@ -34,7 +34,16 @@ export default {
 					"2xl": "1536px",
 				},
 			},
+			animation: {
+				scroll: "scroll 25s linear infinite",
+			},
+			keyframes: {
+				scroll: {
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(-33.33%)" },
+				},
+			},
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [],
 } satisfies Config;
