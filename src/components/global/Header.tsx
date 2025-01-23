@@ -1,23 +1,22 @@
-import Link from "next/link"
-import { Search, Menu } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Search, Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
-    return (
-        <header className="mx-auto px-4 py-4 relative z-10 bg-primary border-b border-gray-900">
-            <nav className="container flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                    <Link href="/" className="text-2xl font-bold">
-                        🏠 BuildGo
-                    </Link>
-                </div>
-
+  return (
+    <header className="mx-auto px-4 py-4 relative z-10 bg-primary border-b border-gray-900">
+      <nav className="container flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <Link href="/" className="text-2xl font-bold">
+            🏠 BuildGo
+          </Link>
+        </div>
                 <div className="hidden md:flex items-center gap-8">
                     <Link href="/" className="font-semibold hover:text-amber-900">
                         HOME
                     </Link>
-                    <Link href="/pages" className="font-semibold hover:text-amber-900">
-                        PAGES
+                    <Link href="/about-us" className="font-semibold hover:text-amber-900">
+                        About Us
                     </Link>
                     <Link href="/services" className="font-semibold hover:text-amber-900">
                         SERVICES
@@ -46,4 +45,3 @@ export default function Header() {
         </header>
     )
 }
-
