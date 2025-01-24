@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="text-[#FDB813]">🏠</div>
             BuildGo
           </div>
-          <p className="text-lg">We're Solutions for all construction</p>
+          <p className="text-lg">We&apos;re Solutions for all construction</p>
         </div>
 
         {/* Address Column */}
@@ -76,7 +76,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="container mx-auto px-4 py-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-gray-400">
-          Copyright 2025 – All Rights Reserved By{" "}
+          Copyright 2025 - All Rights Reserved By
           <Link href="#" className="text-[#FDB813] hover:underline">
             ThemeOri
           </Link>
