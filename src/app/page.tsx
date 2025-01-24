@@ -1,8 +1,8 @@
-import HeroSection from '@/components/HeroSection'
-import ServiceSection from '@/components/ServiceSection'
-import ProjectSection from '@/components/ProjectSection'
-import ContactSection from '@/components/ContactSection'
-import HomeAbout from '@/components/HomeAbout'
+import ContactSection from "@/components/ContactSection";
+import HeroSection from "@/components/HeroSection";
+import HomeAbout from "@/components/HomeAbout";
+import ServiceSection from "@/components/ServiceSection";
+import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
@@ -10,9 +10,8 @@ export default function Home() {
       <HeroSection />
       <HomeAbout />
       <ServiceSection />
-      <ProjectSection />
+      <VideoSection />
       <ContactSection />
     </main>
-  )
+  );
 }
-

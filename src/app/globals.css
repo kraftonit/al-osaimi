@@ -2,20 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-	/* Set default font family for the entire application */
-	html {
-		font-family: var(--font-instrument-sans), system-ui, sans-serif;
-	}
-	.brand-text {
-		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke-width: 2px;
-		-webkit-text-stroke-color: #000;
-		transition: all 0.3s ease;
-	}
+:root {
+  --primary: #ffbf43;
+}
 
-	.brand-text:hover {
-		-webkit-text-stroke-color: var(--primary);
-		transform: scale(1.05);
-	}
+@layer base {
+  /* Set default font family for the entire application */
+  html {
+    font-family: var(--font-instrument-sans), system-ui, sans-serif;
+  }
+  .brand-text {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    transition: all 0.3s ease;
+  }
+
+  .brand-text:hover {
+    -webkit-text-stroke-color: var(--primary);
+    transform: scale(1.05);
+  }
+  .video-animation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px solid var(--primary);
+    background-color: var(--primary);
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: video-animation 2s infinite;
+  }
+  @keyframes video-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1.75);
+    }
+  }
 }
