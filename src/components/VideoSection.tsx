@@ -46,7 +46,6 @@ const VideoSection = () => {
               height="315"
               src="https://www.youtube.com/embed/MPBMb3gaNyk"
               title="YouTube video player"
-              autoplay
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
