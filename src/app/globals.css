@@ -35,6 +35,31 @@
     border-radius: 50%;
     animation: video-animation 2s infinite;
   }
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--percentage);
+    }
+  }
+
+  .progress-bar {
+    --percentage: 0%;
+  }
+
+  .progress-bar[data-percentage="89"] {
+    --percentage: 89%;
+  }
+
+  .progress-bar[data-percentage="79"] {
+    --percentage: 79%;
+  }
+
+  .animate-progress .progress-bar {
+    animation: progress 1.5s ease-out forwards;
+  }
+
   @keyframes video-animation {
     0% {
       transform: scale(1);
