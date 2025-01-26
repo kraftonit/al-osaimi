@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 export default function HeroSection() {
     return (
         <section>
-            <div className="relative py-32 z-10">
+            <div className="relative py-32 z-10 h-[calc(100vh-200px)] md:h-auto bg-primary md:bg-transparent">
                 {/* Content */}
                 <div className="container">
                     <div className="flex flex-col gap-8">
@@ -37,11 +37,11 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute -z-10 top-0 left-0 w-full h-full overflow-hidden">
-                    <Image src="/images/banner-bg-shape.svg" alt="Wave" width={1920} height={600} className="w-full h-auto xl:max-h-[500px]" />
+                <div className="hidden absolute -z-10 top-0 left-0 w-full h-full overflow-hidden md:block">
+                    <Image src="/images/banner-bg-shape.svg" alt="Wave" width={1920} height={600} className="w-full h-full lg:max-h-[800px]" />
                 </div>
             </div>
-            <div className="-mt-[300px] relative -z-10">
+            <div className="-mt-[300px] relative -z-10 hidden lg:block">
                 <Image src="/images/banner.jpg" alt="Banner" width={1920} height={1080} className="w-full h-auto" />
             </div>
         </section>
