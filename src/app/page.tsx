@@ -1,11 +1,9 @@
-import ContactSection from "@/components/ContactSection";
 import Counter from "@/components/Counter";
-import ExperienceSection from "@/components/ExperienceSection";
 import HeroSection from "@/components/HeroSection";
 import HomeAbout from "@/components/HomeAbout";
 import PortfolioSection from "@/components/PortfolioSection";
 import ServiceSection from "@/components/ServiceSection";
-import VideoSection from "@/components/VideoSection";
+import TestimonialSection from "@/components/TestimonialSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
@@ -14,12 +12,10 @@ export default function Home() {
       <HeroSection />
       <HomeAbout />
       <ServiceSection />
-      <VideoSection />
       <WhyChooseUs />
       <PortfolioSection />
       <Counter />
-      <ExperienceSection />
-      <ContactSection />
+      <TestimonialSection />
     </main>
   );
 }
