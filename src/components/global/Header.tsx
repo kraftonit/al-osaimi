@@ -1,47 +1,59 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Search, Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <header className="mx-auto px-4 py-4 relative z-10 bg-primary border-b border-gray-900">
-      <nav className="container flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Link href="/" className="text-2xl font-bold">
-            🏠 BuildGo
+    <header className="fixed top-0 start-0 w-full h-auto z-50">
+      <nav className="container mx-auto px-4 py-6 flex items-center justify-between">
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="MARCO Logo"
+            width={250}
+            height={80}
+            className="w-auto h-20"
+          />
+        </Link>
+
+        <div className="hidden md:flex items-center gap-8">
+          <Link
+            href="/"
+            className="text-lime-300 hover:text-[#d8e701] font-semibold transition-colors"
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className="text-white hover:text-lime-300 font-semibold transition-colors"
+          >
+            About
+          </Link>
+          <Link
+            href="/careers"
+            className="text-white hover:text-lime-300 font-semibold transition-colors"
+          >
+            Careers
+          </Link>
+          <Link
+            href="/services"
+            className="text-white hover:text-lime-300 font-semibold transition-colors"
+          >
+            Services
+          </Link>
+          <Link
+            href="/our-work"
+            className="text-white hover:text-lime-300 font-semibold transition-colors"
+          >
+            Our Work
+          </Link>
+          <Link
+            href="/contact"
+            className="text-white hover:text-lime-300 font-semibold transition-colors"
+          >
+            Contact
           </Link>
         </div>
-                <div className="hidden md:flex items-center gap-8">
-                    <Link href="/" className="font-semibold hover:text-amber-900">
-                        HOME
-                    </Link>
-                    <Link href="/about-us" className="font-semibold hover:text-amber-900">
-                        About Us
-                    </Link>
-                    <Link href="/services" className="font-semibold hover:text-amber-900">
-                        SERVICES
-                    </Link>
-                    <Link href="/blog" className="font-semibold hover:text-amber-900">
-                        BLOG
-                    </Link>
-                    <Link href="/contact" className="font-semibold hover:text-amber-900">
-                        CONTACT US
-                    </Link>
-                </div>
-
-                <div className="flex items-center gap-4">
-                    <Button variant="ghost" size="icon">
-                        <Search className="h-5 w-5" />
-                    </Button>
-                    <Button className="hidden py-3 md:flex rounded-md font-bold bg-black text-white hover:bg-white hover:text-black">
-                        GET STARTED
-                        <span className="ml-2">→</span>
-                    </Button>
-                    <Button variant="ghost" size="icon" className="">
-                        <Menu className="h-5 w-5" />
-                    </Button>
-                </div>
-            </nav>
-        </header>
-    )
+      </nav>
+    </header>
+  );
 }

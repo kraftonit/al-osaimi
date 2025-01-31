@@ -1,102 +1,158 @@
-import { Button } from "@/components/ui/button"
-import { ArrowUpRight, Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
-import Link from "next/link"
+import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1C1C1C] text-white">
-      {/* Top CTA Section */}
-      <div className="container mx-auto px-4 py-16 flex justify-between items-center border-b border-gray-800">
-        <h2 className="text-4xl md:text-5xl font-semibold max-w-2xl">
-          Your Dream Project Awaits —<br />
-          Get Started Today!
-        </h2>
-        <Button size="lg" className="bg-[#FDB813] hover:bg-[#FDB813]/90 rounded-full w-16 h-16">
-          <ArrowUpRight className="h-6 w-6 text-black" />
-        </Button>
+    <footer className="bg-gray-900 pt-12">
+      {/* Contact Info Bar */}
+      <div className="container mx-auto bg-white rounded-2xl py-12 px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex items-center gap-6">
+          <Phone className="text-lime-300 size-12" />
+          <div>
+            <p className="text-black font-semibold text-2xl">Phone Number</p>
+            <p className="text-gray-600 text-xl">+966 11 400 1199</p>
+          </div>
+        </div>
+        <div className="flex items-center gap-6">
+          <Mail className="text-lime-300 size-12" />
+          <div>
+            <p className="text-black font-semibold text-2xl">Email Address</p>
+            <p className="text-gray-600 text-xl">info@mrtc.com.sa</p>
+          </div>
+        </div>
+        <div className="flex items-center gap-6">
+          <MapPin className="text-lime-300 size-12" />
+          <div>
+            <p className="text-black font-semibold text-2xl">Location</p>
+            <p className="text-gray-600 text-xl">
+              12391-8594 Northen Ring Road, Al Nakhil District, Riyadh, Saudi
+              Arabia
+            </p>
+          </div>
+        </div>
       </div>
 
-      {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {/* Brand Column */}
-        <div className="space-y-4">
-          <div className="flex items-center gap-2 text-2xl font-bold">
-            <div className="text-[#FDB813]">🏠</div>
-            BuildGo
-          </div>
-          <p className="text-lg">We&apos;re Solutions for all construction</p>
-        </div>
-
-        {/* Address Column */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Address</h3>
-          <p className="mb-4">
-            3891 Ranch view Richardson,
-            <br />
-            California 62639
-          </p>
-          <Link href="tel:+123256568558" className="text-[#FDB813] hover:underline">
-            +123 (256) 568 58
-          </Link>
-        </div>
-
-        {/* Quick Links Column */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Quick links</h3>
-          <div className="space-y-2">
-            <Link href="#" className="block hover:text-[#FDB813]">
-              About Us
+      {/* Main Footer */}
+      <div className="container px-4 py-12 text-white">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Logo Section */}
+          <div className="flex flex-col items-start">
+            <Image
+              src="/images/logo.png"
+              alt="MARCO Logo"
+              width={150}
+              height={50}
+              className="mb-6"
+            />
+            <Link
+              href="/company-profile"
+              className="bg-lime-300 text-white px-6 py-2 rounded hover:bg-[#a8b301] transition-colors"
+            >
+              Company Profile
             </Link>
-            <Link href="#" className="block hover:text-[#FDB813]">
+          </div>
+
+          {/* Navigation Links */}
+          <div className="space-y-4">
+            <Link
+              href="/"
+              className="block hover:text-lime-300 transition-colors"
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="block hover:text-lime-300 transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              href="/careers"
+              className="block hover:text-lime-300 transition-colors"
+            >
+              Careers
+            </Link>
+            <Link
+              href="/services"
+              className="block hover:text-lime-300 transition-colors"
+            >
               Services
             </Link>
-            <Link href="#" className="block hover:text-[#FDB813]">
-              Blog
+            <Link
+              href="/our-work"
+              className="block hover:text-lime-300 transition-colors"
+            >
+              Our Work
             </Link>
-            <Link href="#" className="block hover:text-[#FDB813]">
-              Contact Us
+            <Link
+              href="/contact"
+              className="block hover:text-lime-300 transition-colors"
+            >
+              Contact
             </Link>
+          </div>
+
+          {/* Case Studies */}
+          <div>
+            <h3 className="text-lime-300 text-xl font-semibold mb-4">
+              Case Studies
+            </h3>
+            <div className="space-y-4">
+              <Link
+                href="/case-studies/imam-university"
+                className="block hover:text-lime-300 transition-colors"
+              >
+                Imam University SAAC & Student Lobby
+              </Link>
+              <Link
+                href="/case-studies/sidf"
+                className="block hover:text-lime-300 transition-colors"
+              >
+                Saudi Industrial Development Fund HQ
+              </Link>
+              <Link
+                href="/case-studies/dgda"
+                className="block hover:text-lime-300 transition-colors"
+              >
+                DGDA Samhan Heritage Hotel
+              </Link>
+            </div>
           </div>
         </div>
 
-        {/* Support Column */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Support</h3>
-          <div className="space-y-2">
-            <Link href="#" className="block hover:text-[#FDB813]">
-              Term & Conditions
-            </Link>
-            <Link href="#" className="block hover:text-[#FDB813]">
-              Privacy policy
+        {/* Footer Bottom */}
+        <div className="mt-12 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-gray-400">
+            Copyright © 2023 MARCO. All rights reserved.
+          </p>
+
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <Link
+                href="/ar"
+                className="text-sm text-gray-400 hover:text-lime-300"
+              >
+                العربية (Arabic)
+              </Link>
+              <span className="text-gray-600">|</span>
+              <Link
+                href="/en"
+                className="text-sm text-gray-400 hover:text-lime-300"
+              >
+                English
+              </Link>
+            </div>
+            <Link
+              href="https://linkedin.com"
+              className="text-gray-400 hover:text-lime-300"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span className="sr-only">LinkedIn</span>
             </Link>
           </div>
-        </div>
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="container mx-auto px-4 py-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-gray-400">
-          Copyright 2025 - All Rights Reserved By
-          <Link href="#" className="text-[#FDB813] hover:underline">
-            ThemeOri
-          </Link>
-        </p>
-        <div className="flex gap-4">
-          <Link href="#" className="p-2 rounded-full bg-gray-800 hover:bg-gray-700">
-            <Facebook className="h-5 w-5" />
-          </Link>
-          <Link href="#" className="p-2 rounded-full bg-gray-800 hover:bg-gray-700">
-            <Twitter className="h-5 w-5" />
-          </Link>
-          <Link href="#" className="p-2 rounded-full bg-gray-800 hover:bg-gray-700">
-            <Instagram className="h-5 w-5" />
-          </Link>
-          <Link href="#" className="p-2 rounded-full bg-gray-800 hover:bg-gray-700">
-            <Linkedin className="h-5 w-5" />
-          </Link>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-

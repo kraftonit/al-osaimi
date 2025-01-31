@@ -1,50 +1,44 @@
-import Image from "next/image"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Image from "next/image";
+import Link from "next/link";
 
-export default function HeroSection() {
-    return (
-        <section>
-            <div className="relative py-32 z-10">
-                {/* Content */}
-                <div className="container">
-                    <div className="flex flex-col gap-8">
-                        <h1 className="text-5xl lg:text-8xl font-bold text-black leading-tight">
-                            Building Construction Solutions
-                        </h1>
+export default function Hero() {
+  return (
+    <div className="relative min-h-screen">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/banner.jpg"
+          alt="Modern architectural building"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/30" />
+      </div>
 
-                        <div className="flex items-center gap-1">
-                            <div className="flex -space-x-2">
-                                <Avatar className="border-2 border-white">
-                                    <AvatarImage src="/placeholder.svg" />
-                                    <AvatarFallback>CN</AvatarFallback>
-                                </Avatar>
-                                <Avatar className="border-2 border-white">
-                                    <AvatarImage src="/placeholder.svg" />
-                                    <AvatarFallback>CN</AvatarFallback>
-                                </Avatar>
-                                <Avatar className="border-2 border-white">
-                                    <AvatarImage src="/placeholder.svg" />
-                                    <AvatarFallback>CN</AvatarFallback>
-                                </Avatar>
-                                <Avatar className="bg-zinc-900 border-2 border-white">
-                                    <AvatarFallback className="text-white">+</AvatarFallback>
-                                </Avatar>
-                            </div>
-                            <div className="ml-4">
-                                <p className="font-medium">More then 25K Clients</p>
-                                <p className="text-sm text-zinc-700">Reviews</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="absolute -z-10 top-0 left-0 w-full h-full overflow-hidden">
-                    <Image src="/images/banner-bg-shape.svg" alt="Wave" width={1920} height={600} className="w-full h-auto xl:max-h-[500px]" />
-                </div>
-            </div>
-            <div className="-mt-[300px] relative -z-10">
-                <Image src="/images/banner.jpg" alt="Banner" width={1920} height={1080} className="w-full h-auto" />
-            </div>
-        </section>
-    )
+      {/* Hero Content */}
+      <div className="relative z-10 container min-h-screen flex items-center">
+        <div className="max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            WHEN SUCCESS IS
+            <br />
+            IMPERATIVE,
+            <br />
+            MARCO DELIVERS
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
+            Guiding Your Project to Success With a Hands-on Approach and Focused
+            Attention to Every Detail
+          </p>
+          <Link
+            href="/our-work"
+            className="inline-block bg-lime-300 text-white px-8 py-3 rounded hover:bg-[#d8e701] transition-colors text-lg font-medium"
+          >
+            See Our Work
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 }
-
