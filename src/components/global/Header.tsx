@@ -1,10 +1,30 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed top-0 start-0 w-full h-auto z-50">
-      <nav className="container mx-auto px-4 py-6 flex items-center justify-between">
+    <header
+      className={`fixed top-0 start-0 w-full h-auto z-50 ${
+        isSticky ? "sticky bg-black/50 backdrop-blur-sm" : ""
+      }`}
+    >
+      <nav className="container py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo.png"
