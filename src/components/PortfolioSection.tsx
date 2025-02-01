@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PortfolioSection() {
   return (
@@ -23,6 +24,12 @@ export default function PortfolioSection() {
                 <p className="text-muted-foreground">
                   Expert consultation and detailed project planning
                 </p>
+                <Link
+                  href="/portfolio"
+                  className="bg-primary inline-block mt-4 text-black px-4 py-2 rounded-full"
+                >
+                  Learn More
+                </Link>
               </div>
             </CardContent>
           </Card>
@@ -40,6 +47,12 @@ export default function PortfolioSection() {
                 <p className="text-muted-foreground">
                   Professional on-site management and supervision
                 </p>
+                <Link
+                  href="/portfolio"
+                  className="bg-primary inline-block mt-4 text-black px-4 py-2 rounded-full"
+                >
+                  Learn More
+                </Link>
               </div>
             </CardContent>
           </Card>
@@ -59,6 +72,12 @@ export default function PortfolioSection() {
                 <p className="text-muted-foreground">
                   Rigorous quality control and assurance processes
                 </p>
+                <Link
+                  href="/portfolio"
+                  className="bg-primary inline-block mt-4 text-black px-4 py-2 rounded-full"
+                >
+                  Learn More
+                </Link>
               </div>
             </CardContent>
           </Card>

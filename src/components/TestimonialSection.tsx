@@ -3,6 +3,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
@@ -22,14 +24,6 @@ export default function TestimonialSection() {
     },
   ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <section className="py-16 bg-zinc-900 text-white">
       <div className="container mx-auto px-4">
@@ -41,34 +35,45 @@ export default function TestimonialSection() {
                 What Current Employees Are Saying:
               </h2>
             </div>
-            <Carousel
-              opts={{
-                align: "start",
-                dots: true,
-              }}
-              className="w-full max-w-sm"
-            >
-              <CarouselContent>
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <CarouselItem
-                    key={index}
-                    className="md:basis-1/2 lg:basis-1/3"
-                  >
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex aspect-square items-center justify-center p-6">
-                          <span className="text-3xl font-semibold">
-                            {index + 1}
-                          </span>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              {/* <CarouselPrevious />
-              <CarouselNext /> */}
-            </Carousel>
+            <div className="w-full px-20">
+              <Carousel
+                opts={{
+                  align: "start",
+                  dots: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent>
+                  {testimonials.map((testimonial, index) => (
+                    <CarouselItem
+                      key={index}
+                      className="md:basis-1/1 lg:basis-1/2"
+                    >
+                      <div className="p-1">
+                        <Card className="border-none">
+                          <CardContent className="flex flex-col gap-6 aspect-square p-6">
+                            <blockquote className="text-xl font-medium">
+                              <span className="text-yellow-400 text-3xl">
+                                &quot;
+                              </span>
+                              {testimonials[index].quote}
+                              <span className="text-yellow-400 text-3xl">
+                                &quot;
+                              </span>
+                            </blockquote>
+                            <h2 className="text-sm font-bold text-right">
+                              {testimonials[index].author}
+                            </h2>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
           </div>
           <div className="relative h-[500px] mt-8 lg:mt-0">
             <Image

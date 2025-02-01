@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary: #ffbf43;
+  --primary: #b9d533;
 }
 
 @layer base {

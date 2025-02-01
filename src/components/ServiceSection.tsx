@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const services = [
   { title: "Residential Construction", icon: "🏠" },
@@ -31,6 +32,9 @@ export default function Services() {
               <p className="text-gray-900 text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
+              <Link href="/services" className="text-yellow-400">
+                Learn More
+              </Link>
             </motion.div>
           ))}
         </div>
