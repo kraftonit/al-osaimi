@@ -39,7 +39,6 @@ export default function TestimonialSection() {
               <Carousel
                 opts={{
                   align: "start",
-                  dots: true,
                 }}
                 className="w-full"
               >
@@ -56,13 +55,13 @@ export default function TestimonialSection() {
                               <span className="text-yellow-400 text-3xl">
                                 &quot;
                               </span>
-                              {testimonials[index].quote}
+                              {testimonial.quote}
                               <span className="text-yellow-400 text-3xl">
                                 &quot;
                               </span>
                             </blockquote>
                             <h2 className="text-sm font-bold text-right">
-                              {testimonials[index].author}
+                              {testimonial.author}
                             </h2>
                           </CardContent>
                         </Card>
