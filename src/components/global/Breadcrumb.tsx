@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export default function Breadcrumb({ title, imgUrl }: any) {
+export default function Breadcrumb({
+  title,
+  imgUrl,
+}: {
+  title: string;
+  imgUrl: string;
+}) {
   return (
     <div className="relative min-h-[50vh]">
       {/* Background Image */}
