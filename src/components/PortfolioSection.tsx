@@ -13,7 +13,7 @@ export default function PortfolioSection() {
           <Card>
             <CardContent className="p-0">
               <Image
-                src="/images/banner.jpg"
+                src="/images/project-1.jpg"
                 alt="Construction workers reviewing plans"
                 width={400}
                 height={300}
@@ -36,7 +36,7 @@ export default function PortfolioSection() {
           <Card>
             <CardContent className="p-0">
               <Image
-                src="/images/banner.jpg"
+                src="/images/project-2.jpg"
                 alt="Construction worker at site"
                 width={400}
                 height={300}
@@ -59,7 +59,7 @@ export default function PortfolioSection() {
           <Card>
             <CardContent className="p-0">
               <Image
-                src="/images/banner.jpg"
+                src="/images/project-3.jpg"
                 alt="Construction worker reviewing blueprints"
                 width={400}
                 height={300}
