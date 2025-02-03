@@ -43,7 +43,7 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/about-us"
             className="text-white hover:text-lime-300 font-semibold transition-colors"
           >
             About
