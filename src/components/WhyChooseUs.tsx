@@ -34,7 +34,7 @@ export default function ConstructionStats() {
         <div className="relative">
           <div className="relative aspect-[4/3]">
             <Image
-              src="/images/why-choose-us.jpg"
+              src="/images/why-choose-us-img.jpg"
               alt="Construction workers at building site"
               fill
               className="object-cover rounded-lg"
