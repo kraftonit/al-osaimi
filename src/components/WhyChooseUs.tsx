@@ -61,8 +61,8 @@ export default function ConstructionStats() {
           </h2>
 
           <p className="text-gray-600">
-            One Significant Challenge Is Managing Project Costs In An Era Of
-            Fluctuating Material Prices And Labor Shortages
+            We tackle modern building challenges with innovative solutions,
+            ensuring efficiency, sustainability, and quality in every project.
           </p>
 
           {/* Progress bars */}
