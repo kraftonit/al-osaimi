@@ -46,7 +46,7 @@ export default function Footer() {
             />
             <Link
               href="/company-profile"
-              className="bg-lime-300 text-white px-6 py-2 rounded hover:bg-[#a8b301] transition-colors"
+              className="bg-lime-300 text-black px-6 py-2 rounded hover:bg-[#a8b301] transition-colors"
             >
               Company Profile
             </Link>
