@@ -11,14 +11,14 @@ export default function Footer() {
           <Phone className="text-lime-300 size-12" />
           <div>
             <p className="text-black font-semibold text-2xl">Phone Number</p>
-            <p className="text-gray-600 text-xl">+966 11 400 1199</p>
+            <p className="text-gray-600 text-xl">+966 13 802 3115</p>
           </div>
         </div>
         <div className="flex items-center gap-6">
           <Mail className="text-lime-300 size-12" />
           <div>
             <p className="text-black font-semibold text-2xl">Email Address</p>
-            <p className="text-gray-600 text-xl">info@mrtc.com.sa</p>
+            <p className="text-gray-600 text-xl">info@al-kesaa.com</p>
           </div>
         </div>
         <div className="flex items-center gap-6">
@@ -26,8 +26,7 @@ export default function Footer() {
           <div>
             <p className="text-black font-semibold text-2xl">Location</p>
             <p className="text-gray-600 text-xl">
-              12391-8594 Northen Ring Road, Al Nakhil District, Riyadh, Saudi
-              Arabia
+              PO Box 36545, Dammam 31429, Saudi Arabia
             </p>
           </div>
         </div>
@@ -124,7 +123,8 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="mt-12 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-400">
-            Copyright © 2023 MARCO. All rights reserved.
+            Copyright © {new Date().getFullYear()} AL-KESAA. All rights
+            reserved.
           </p>
 
           <div className="flex items-center gap-6">
