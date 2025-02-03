@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Breadcrumb from '@/components/global/Breadcrumb'
 
 const navigation = [
