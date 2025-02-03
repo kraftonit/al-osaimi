@@ -64,8 +64,6 @@ const jobOpenings = [
 ]
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <>
       <Breadcrumb title="About Us" imgUrl="/images/about-breadcrumb.jpg" />
