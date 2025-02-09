@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -26,13 +26,14 @@ export default function Header() {
     >
       <nav className="container py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Image
+          {/* <Image
             src="/images/logo.png"
             alt="MARCO Logo"
             width={250}
             height={80}
             className="w-auto h-20"
-          />
+          /> */}
+          <h2 className="text-[40px] font-semibold text-lime-300">Al-Kesaa</h2>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

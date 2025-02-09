@@ -76,7 +76,7 @@ export default function TestimonialSection() {
           </div>
           <div className="relative h-[500px] mt-8 lg:mt-0">
             <Image
-              src="/images/banner.jpg"
+              src="/images/testimonial-img.jpg"
               alt="Construction workers reviewing plans"
               fill
               className="object-cover rounded-lg"

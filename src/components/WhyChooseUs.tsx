@@ -34,7 +34,7 @@ export default function ConstructionStats() {
         <div className="relative">
           <div className="relative aspect-[4/3]">
             <Image
-              src="/images/why-choose-us.jpg"
+              src="/images/why-choose-us-img.jpg"
               alt="Construction workers at building site"
               fill
               className="object-cover rounded-lg"
@@ -61,8 +61,8 @@ export default function ConstructionStats() {
           </h2>
 
           <p className="text-gray-600">
-            One Significant Challenge Is Managing Project Costs In An Era Of
-            Fluctuating Material Prices And Labor Shortages
+            We tackle modern building challenges with innovative solutions,
+            ensuring efficiency, sustainability, and quality in every project.
           </p>
 
           {/* Progress bars */}

@@ -21,6 +21,7 @@ export default function Hero() {
       <div className="relative z-10 container min-h-screen flex items-center">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+<<<<<<< HEAD
             WHEN SUCCESS IS
             <br />
             IMPERATIVE,
@@ -33,6 +34,17 @@ export default function Hero() {
           <Link
             href="/our-work"
             className="inline-block bg-primary text-black px-8 py-3 rounded hover:bg-primary/80 transition-colors text-lg font-medium"
+=======
+            Building the Future Empowering <br /> Workforce
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
+            Providing top-quality construction services and skilled manpower
+            solutions to drive your projects forward.
+          </p>
+          <Link
+            href="/our-work"
+            className="inline-block bg-lime-300 text-black px-8 py-3 rounded hover:bg-[#d8e701] transition-colors text-lg font-medium"
+>>>>>>> de81c46d0ec9f173dbde18cd8fbf0c500626ad8d
           >
             See Our Work
           </Link>
