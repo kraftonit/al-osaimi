@@ -25,15 +25,14 @@ export default function Hero() {
             <br />
             IMPERATIVE,
             <br />
-            MARCO DELIVERS
+            AL-KESAA DELIVERS
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl">
-            Guiding Your Project to Success With a Hands-on Approach and Focused
-            Attention to Every Detail
+          <p className="text-base md:text-xl text-white/90 mb-8 max-w-2xl">
+          AL-KESAA GENERAL CONTRACTING EST. is the Largest Manpower Service Company Provider operating from the Eastern Province, the heart of oil industry in the Kingdom of Saudi Arabia
           </p>
           <Link
             href="/our-work"
-            className="inline-block bg-lime-300 text-white px-8 py-3 rounded hover:bg-[#d8e701] transition-colors text-lg font-medium"
+            className="inline-block bg-primary text-black px-8 py-3 rounded hover:bg-primary/80 transition-colors text-lg font-medium"
           >
             See Our Work
           </Link>
